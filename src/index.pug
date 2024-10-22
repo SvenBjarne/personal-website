@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  .container
+    header
+      h1= name
+      p= position
+      p= education
+    
+    .resume
+      each item in resume
+        .section
+          h2= item.title
+          p= item.content
