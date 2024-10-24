@@ -1,25 +1,99 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-  
-  header {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  .resume .section {
-    margin-bottom: 1.5rem;
-  }
-  
-  .resume h2 {
-    color: #333;
-  }
+.body {
+  font-family: Helvetica, sans-serif;
+  padding: 40px;
+  height: 100%;
+  margin: 30px;
+}
+
+.wrapper {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.name-box {
+  background-color: red;
+  color: white;
+  padding: 0 16px;
+  margin-right: auto;
+}
+
+nav.menu ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav.menu li {
+  margin-left: 40px;
+}
+
+nav.menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav.menu a:hover {
+  text-decoration: underline; 
+}
+
+.summary {
+  margin: 80px 0px;
+}
+
+.project-block {
+  display: flex;
+  align-items: flex-start;
+  margin: 40px 0;
+}
+
+.project-title, .project-topic-list {
+  flex: 1;
+}
+
+.project-description {
+  flex: 2;
+}
+
+hr {
+  border: none;
+  height: 0.5px;
+  background-color: grey;
+}
+
+.about-container {
+  display: flex;
+  margin: 80px 0px;
+}
+
+.about-container img {
+  max-width: 400px;
+  margin: 0;
+}
+
+.about-text {
+  max-width: 600px;
+  margin: -20px 40px
+}
+
+footer {
+  text-align: center;
+  padding-top: 70px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: inline-block;
+}
+
+.footer-content span {
+  display: inline-block;
+  margin: 40px 100px;
+}

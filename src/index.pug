@@ -1,14 +1,90 @@
 extends layout
 
 block content
-  .container
-    header
-      h1= name
-      p= position
-      p= education
-    
-    .resume
-      each item in resume
-        .section
-          h2= item.title
-          p= item.content
+  .summary
+    p 
+      em Specialized in mobile application development, passionate on the seamless integration of hardware devices and leveraging communication protocols - 
+      br
+      em Bluetooth, WebRTC, MQTT, WebSocket.
+      br
+      br
+      em Keen eye for presenting data.
+      br
+      br
+      em Athlete.
+  .project-block
+    .project-title
+      h2 
+        | video
+        br 
+        | stream
+    .project-topic-list
+      h3 topics
+      p(style="font-size: 18px;") webRTC
+      p(style="font-size: 18px;") RTSP
+    .project-description
+      p 
+        | Peer-to-peer webRTC video stream application. Custom signaling protocol via WebSocket, two way audio/video. Dynamic RTSP stream as fallback. 
+        br
+        br
+        | Cached video file playback with a custom player build on top of VLC, enabling m4v playback. 
+  hr
+  .project-block
+    .project-title
+      h1 Bluetooth
+    .project-topic-list
+      h4 libsodium
+      p(style="font-size: 16px;") CoreBluetooth
+      h4 Frame Buffer
+      h4 Combine
+    .project-description
+      p 
+        | Built TLS-like encrypted Bluetooth streaming, IoT to iPhone, facilitating secure device communication via a frame buffer encrypted using libsodium.
+        br
+  hr
+  .project-block
+    .project-title
+      h2 
+        | Real time
+        br
+        | data
+    .project-topic-list
+      p(style="font-size: 22px; font-style: italic; font-weight: bold") MQTT
+      h4 WebSocket
+    .project-description
+      p 
+        | Build MQTT and Websocket clients for multiple applications, displaying real time data send out by IoT devices. Lot’s of data.
+        br
+  hr
+  .project-block
+    .project-title
+      h3 
+        | NFC
+        br
+        | QR Codes
+    .project-topic-list
+      h3 CoreNFC
+      h5 AVFoundation
+    .project-description
+      p NFC reader service to retrieve data from ISO 15693 chips. Devices with no NFC capabilities can automatically fall back to QR Code reader service.
+  hr
+  .project-block
+    .project-title
+      h5 Architecture
+    .project-topic-list
+      h4 Presentation
+      h4 Business Logic
+      h4 Data Streams
+    .project-description
+      p Wrote applications from scratch, defining architecture, managing north of a hundred ViewControllers/Views and lot’s of data, CI/CD and testing.
+  hr
+  .project-block
+    .project-title
+      h3 More
+    .project-topic-list
+      h4 Data Analysis
+      h2 Backend
+      h2 Web
+    .project-description
+      p Typescript, Python, Backend, Data Visualalisation
+  

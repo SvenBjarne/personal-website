@@ -3,12 +3,23 @@ html
   head
     title Portfolio
     link(rel="stylesheet", href="style.css")
-  body
-    header
-    h1 Sven-Bjarne Seiffert
-      nav
-        ul
-          li: a(href="/") home
-          li: a(href="/articles") articles
-          li: a(href="/about") about
-    block content
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  .body
+    body
+      header
+        .header-container
+          .name-box
+            h3 Sven-Bjarne Seiffert
+          nav.menu
+            ul
+              li: a(href="/") home
+              li: a(href="/articles") articles
+              li: a(href="https://github.com/svenbjarne" target="_blank") github
+              li: a(href="/about") about
+      .wrapper
+        .content
+          block content
+        footer
+          div.footer-content
+            span(style="font-style: italic; color: #777777") Kansas City, MO
+            span(style="font-style: italic; color: #777777") svenbjarne at me dot com
