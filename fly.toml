@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for app-blue-cherry-117 on 2024-10-28T17:41:50Z
+# fly.toml app configuration file generated for app-aged-sea-5107 on 2024-10-28T12:59:17-05:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'app-blue-cherry-117'
+app = 'app-aged-sea-5107'
 primary_region = 'ewr'
 
 [build]
