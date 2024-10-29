@@ -12,6 +12,6 @@ app.get('/', (req, res) => { res.render('index', data); });
 app.get('/articles', (req, res) => { res.render('articles', data); });
 app.get('/about', (req, res) => { res.render('about', data); });
 
-app.listen(3000, "0.0.0.0", () => {
-  return console.log(`Express is listening at http://0.0.0.0:3000`);
+app.listen(8080, "0.0.0.0", () => {
+  return console.log(`Express is listening at http://0.0.0.0:8080`);
 });
