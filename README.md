@@ -1,1 +1,1 @@
-https://www.svenbjarne.com
+https://svenbjarne.com/
