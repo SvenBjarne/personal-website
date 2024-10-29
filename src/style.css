@@ -5,6 +5,13 @@
   margin: 30px;
 }
 
+@media (max-width: 600px) {
+  .body {
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
 .wrapper {
   min-height: 90vh;
   display: flex;
@@ -30,6 +37,18 @@ nav.menu ul {
   padding: 0;
 }
 
+@media (max-width: 600px) {
+  nav.menu ul {
+    display: block;
+    margin-top: 20px;
+  }
+
+  nav.menu li {
+    margin: 10px 0;
+    margin-left: 0;
+  }
+}
+
 nav.menu li {
   margin-left: 40px;
 }
@@ -49,8 +68,15 @@ nav.menu a:hover {
 
 .project-block {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   margin: 40px 0;
+}
+
+@media (min-width: 600px) {
+  .project-block {
+      flex-direction: row;
+  }
 }
 
 .project-title, .project-topic-list {
@@ -69,10 +95,18 @@ hr {
 
 .article-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   border: 1px solid #f1f1f1;
   max-width: 700px;
   margin: 80px 0px;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .article-container {
+    align-items: center;
+    flex-direction: row;
+  }
 }
 
 a {
@@ -89,34 +123,53 @@ a {
 }
 
 .article-image {
-  flex: 0 0 auto;
+  display: none;
 }
 
-.image img {
-  display: block;
-  width: 120px; /* Set image width to be square */
-  height: 80px; /* Matches width for square shape */
-  object-fit: cover;
+@media (min-width: 600px) {
+  .article-image {
+    display: block;
+  }
 }
 
 .caption {
-  font-weight: 400; /* Semi-bold */
+  font-weight: 400;
   font-size: 12px; 
 }
 
 .about-container {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin: 80px 0px;
 }
 
+@media (min-width: 600px) {
+  .about-container {
+      flex-direction: row;
+      align-items: flex-start;
+  }
+}
+
 .about-container img {
-  max-width: 400px;
-  margin: 0;
+  max-width: 200px;
+  margin: 20px 0px;;
+}
+
+@media (min-width: 600px) {
+  .about-container img {
+    max-width: 400px;
+  }
 }
 
 .about-text {
-  max-width: 600px;
-  margin: -20px 40px
+  margin: 0 0px
+}
+
+@media (min-width: 600px) {
+  .about-text {
+    margin: 0 40px
+  }
 }
 
 footer {
@@ -132,5 +185,5 @@ footer {
 
 .footer-content span {
   display: inline-block;
-  margin: 40px 100px;
+  margin: 40px 40px;
 }
