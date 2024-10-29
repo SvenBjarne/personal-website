@@ -1,0 +1,15 @@
+{
+    "name": "Sven-Bjarne Seiffert",
+    "position": "Senior iOS Engineer",
+    "education": "B.Sc. in Computer Science",
+    "resume": [
+      {
+        "title": "Work Experience",
+        "content": "6 years at HUM Systems GmbH"
+      },
+      {
+        "title": "Skills",
+        "content": "Swift, WebRTC, PostgreSQL, etc."
+      }
+    ]
+}
