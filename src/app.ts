@@ -6,6 +6,12 @@ const app = express();
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname));
 app.use(express.static(path.join(__dirname)));
+app.use((req, res, next) => {
+  if (req.hostname === "svenbjarne.com") {
+    return res.redirect(301, `https://www.svenbjarne.com${req.url}`);
+  }
+  next();
+});
 
 app.get('/', (req, res) => { res.render('index'); });
 app.get('/articles', (req, res) => { res.render('articles'); });
